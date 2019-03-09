@@ -1,5 +1,5 @@
 module "joshmcmillan-co-uk" {
-  source = "../../templates/portfolio_domain"
+  source = "../../templates/aliased_domain"
 
   domain = "joshmcmillan.co.uk"
 
