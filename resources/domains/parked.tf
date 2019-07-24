@@ -1,3 +1,28 @@
+module "burntwothings-com" {
+  source = "../../templates/parked_domain"
+  domain = "burntwothings.com"
+}
+
+module "chateau-technology" {
+  source = "../../templates/parked_domain"
+  domain = "chateau.technology"
+}
+
+module "feelingcagey-com" {
+  source = "../../templates/parked_domain"
+  domain = "feelingcagey.com"
+}
+
+module "incident-engineering" {
+  source = "../../templates/parked_domain"
+  domain = "incident.engineering"
+}
+
+module "incident-technology" {
+  source = "../../templates/parked_domain"
+  domain = "incident.technology"
+}
+
 module "mcmillan-works" {
   source = "../../templates/parked_domain"
   domain = "mcmillan.works"
@@ -8,24 +33,44 @@ module "quornhub-eu" {
   domain = "quornhub.eu"
 }
 
-module "feelingcagey-com" {
+module "rhythm-cool" {
   source = "../../templates/parked_domain"
-  domain = "feelingcagey.com"
+  domain = "rhythm.cool"
 }
 
-module "wilf-dog" {
+module "rhythm-report" {
   source = "../../templates/parked_domain"
-  domain = "wilf.dog"
+  domain = "rhythm.report"
 }
 
-module "chateau-technology" {
+module "shush-engineering" {
   source = "../../templates/parked_domain"
-  domain = "chateau.technology"
+  domain = "shush.engineering"
 }
 
-module "burntwothings-com" {
+module "shush-industries" {
   source = "../../templates/parked_domain"
-  domain = "burntwothings.com"
+  domain = "shush.industries"
+}
+
+module "shush-technology" {
+  source = "../../templates/parked_domain"
+  domain = "shush.technology"
+}
+
+module "shush-website" {
+  source = "../../templates/parked_domain"
+  domain = "shush.website"
+}
+
+module "shush-wtf" {
+  source = "../../templates/parked_domain"
+  domain = "shush.wtf"
+}
+
+module "stereo-company" {
+  source = "../../templates/parked_domain"
+  domain = "stereo.company"
 }
 
 module "stereo-consulting" {
@@ -38,22 +83,12 @@ module "stereo-engineering" {
   domain = "stereo.engineering"
 }
 
-module "stereo-company" {
-  source = "../../templates/parked_domain"
-  domain = "stereo.company"
-}
-
 module "stereo-wtf" {
   source = "../../templates/parked_domain"
   domain = "stereo.wtf"
 }
 
-module "incident-technology" {
+module "wilf-dog" {
   source = "../../templates/parked_domain"
-  domain = "incident.technology"
-}
-
-module "incident-engineering" {
-  source = "../../templates/parked_domain"
-  domain = "incident.engineering"
+  domain = "wilf.dog"
 }
