@@ -9,3 +9,8 @@ variable "www_zone_id" {}
 variable "registrar" {
   default = "AWS"
 }
+
+variable "requires_email" {
+  type    = bool
+  default = false
+}

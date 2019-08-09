@@ -1,7 +1,7 @@
-module "joshmcmillan-co-uk" {
+module "placepu-gs" {
   source = "../../templates/aliased_domain"
 
-  domain = "joshmcmillan.co.uk"
+  domain = "placepu.gs"
 
   apex_name    = "s3-website-eu-west-1.amazonaws.com."
   apex_zone_id = "Z1BKCTXD74EZPE"
@@ -9,5 +9,5 @@ module "joshmcmillan-co-uk" {
   www_name    = "s3-website-eu-west-1.amazonaws.com."
   www_zone_id = "Z1BKCTXD74EZPE"
 
-  requires_email = true
+  registrar = "iwantmyname"
 }
