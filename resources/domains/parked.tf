@@ -28,6 +28,12 @@ module "mcmillan-works" {
   domain = "mcmillan.works"
 }
 
+module "plush-dev" {
+  source    = "../../templates/parked_domain"
+  domain    = "plush.dev"
+  registrar = "Google"
+}
+
 module "quornhub-eu" {
   source = "../../templates/parked_domain"
   domain = "quornhub.eu"
