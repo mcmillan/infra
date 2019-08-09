@@ -35,8 +35,9 @@ module "plush-dev" {
 }
 
 module "quornhub-eu" {
-  source = "../../templates/parked_domain"
-  domain = "quornhub.eu"
+  source    = "../../templates/parked_domain"
+  domain    = "quornhub.eu"
+  registrar = "iwantmyname"
 }
 
 module "rhythm-cool" {
