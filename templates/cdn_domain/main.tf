@@ -5,7 +5,11 @@ provider "aws" {
 
 // dns
 resource "aws_route53_zone" "zone" {
-  name = var.domain_name
+  name    = var.domain_name
+  comment = "Managed by mcmillan/infra (registrar: ${var.registrar})"
+  tags = {
+    Registrar = var.registrar
+  }
 }
 
 resource "aws_route53_record" "apex" {

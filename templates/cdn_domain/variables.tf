@@ -21,6 +21,10 @@ variable "support_http2" {
   default = false // this defaults to false as heroku does not support h2 rn
 }
 
+variable "registrar" {
+  default = "AWS"
+}
+
 variable "cache_max_ttl" {
   type    = number
   default = 60
