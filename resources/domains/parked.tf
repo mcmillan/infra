@@ -13,6 +13,26 @@ module "feelingcagey-com" {
   domain = "feelingcagey.com"
 }
 
+module "honk-camera" {
+  source = "../../templates/parked_domain"
+  domain = "honk.camera"
+}
+
+module "honk-chat" {
+  source = "../../templates/parked_domain"
+  domain = "honk.chat"
+}
+
+module "honk-cool" {
+  source = "../../templates/parked_domain"
+  domain = "honk.cool"
+}
+
+module "honk-platform-com" {
+  source = "../../templates/parked_domain"
+  domain = "honk-platform.com"
+}
+
 module "incident-engineering" {
   source = "../../templates/parked_domain"
   domain = "incident.engineering"
