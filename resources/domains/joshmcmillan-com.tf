@@ -3,4 +3,6 @@ module "joshmcmillan-com" {
 
   domain            = "joshmcmillan.com"
   netlify_subdomain = "mcmillan-brand"
+
+  requires_email = true
 }

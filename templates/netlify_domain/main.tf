@@ -29,6 +29,7 @@ resource "aws_route53_record" "mx" {
   name    = "${var.domain}"
   type    = "MX"
   ttl     = 300
+  count   = var.requires_email == true ? 1 : 0
 
   records = [
     "5 ALT1.ASPMX.L.GOOGLE.COM",
