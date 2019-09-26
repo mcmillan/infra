@@ -1,13 +1,9 @@
 module "joshmcmillan-co-uk" {
-  source = "../../templates/aliased_domain"
+  source            = "../../templates/netlify_domain"
+  domain            = "joshmcmillan.co.uk"
+  netlify_subdomain = "mcmillan-canonical-redirect"
 
-  domain = "joshmcmillan.co.uk"
-
-  apex_name    = "s3-website-eu-west-1.amazonaws.com."
-  apex_zone_id = "Z1BKCTXD74EZPE"
-
-  www_name    = "s3-website-eu-west-1.amazonaws.com."
-  www_zone_id = "Z1BKCTXD74EZPE"
-
-  requires_email = true
+  # DO NOT EVER REMOVE BELOW LINE
+  requires_email = true # SERIOUSLY DON'T REMOVE THIS LINE OR I'LL STOP GETTING EMAIL
+  # DO NOT EVER REMOVE ABOVE LINE
 }
