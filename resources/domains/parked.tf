@@ -43,6 +43,18 @@ module "incident-technology" {
   domain = "incident.technology"
 }
 
+module "placepu-gs" {
+  source    = "../../templates/parked_domain"
+  domain    = "placepu.gs"
+  registrar = "iwantmyname"
+}
+
+module "plush-dev" {
+  source    = "../../templates/parked_domain"
+  domain    = "plush.dev"
+  registrar = "google"
+}
+
 module "quornhub-eu" {
   source    = "../../templates/parked_domain"
   domain    = "quornhub.eu"
