@@ -43,3 +43,9 @@ module "joshmcmillan-eu" {
   domain            = "joshmcmillan.eu"
   netlify_subdomain = "mcmillan-canonical-redirect"
 }
+
+module "mcmillan-works" {
+  source            = "../../templates/netlify_domain"
+  domain            = "mcmillan.works"
+  netlify_subdomain = "mcmillan-canonical-redirect"
+}

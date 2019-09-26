@@ -43,11 +43,6 @@ module "incident-technology" {
   domain = "incident.technology"
 }
 
-module "mcmillan-works" {
-  source = "../../templates/parked_domain"
-  domain = "mcmillan.works"
-}
-
 module "quornhub-eu" {
   source    = "../../templates/parked_domain"
   domain    = "quornhub.eu"
