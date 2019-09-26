@@ -43,36 +43,6 @@ module "incident-technology" {
   domain = "incident.technology"
 }
 
-module "joshmcmillan-net" {
-  source = "../../templates/parked_domain"
-  domain = "joshmcmillan.net"
-}
-
-module "joshmcmillan-uk" {
-  source = "../../templates/parked_domain"
-  domain = "joshmcmillan.uk"
-}
-
-module "joshmcmillan-org" {
-  source = "../../templates/parked_domain"
-  domain = "joshmcmillan.org"
-}
-
-module "joshmcmillan-me" {
-  source = "../../templates/parked_domain"
-  domain = "joshmcmillan.me"
-}
-
-module "joshmcmillan-co" {
-  source = "../../templates/parked_domain"
-  domain = "joshmcmillan.co"
-}
-
-module "joshmcmillan-eu" {
-  source = "../../templates/parked_domain"
-  domain = "joshmcmillan.eu"
-}
-
 module "mcmillan-works" {
   source = "../../templates/parked_domain"
   domain = "mcmillan.works"
