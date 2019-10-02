@@ -91,11 +91,6 @@ module "shush-website" {
   domain = "shush.website"
 }
 
-module "shush-wtf" {
-  source = "../../templates/parked_domain"
-  domain = "shush.wtf"
-}
-
 module "stereo-company" {
   source = "../../templates/parked_domain"
   domain = "stereo.company"
