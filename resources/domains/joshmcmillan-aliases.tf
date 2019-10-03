@@ -5,6 +5,7 @@ module "joshmcmillan-co-uk" {
 
   # DO NOT EVER REMOVE BELOW LINE
   requires_email = true # SERIOUSLY DON'T REMOVE THIS LINE OR I'LL STOP GETTING EMAIL
+
   # DO NOT EVER REMOVE ABOVE LINE
 }
 
@@ -41,6 +42,18 @@ module "joshmcmillan-co" {
 module "joshmcmillan-eu" {
   source            = "../../templates/netlify_domain"
   domain            = "joshmcmillan.eu"
+  netlify_subdomain = "mcmillan-canonical-redirect"
+}
+
+module "josh-engineering" {
+  source            = "../../templates/netlify_domain"
+  domain            = "josh.engineering"
+  netlify_subdomain = "mcmillan-canonical-redirect"
+}
+
+module "mcmillan-sexy" {
+  source            = "../../templates/netlify_domain"
+  domain            = "mcmillan.sexy"
   netlify_subdomain = "mcmillan-canonical-redirect"
 }
 
