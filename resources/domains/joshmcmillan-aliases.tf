@@ -51,6 +51,20 @@ module "josh-engineering" {
   netlify_subdomain = "mcmillan-canonical-redirect"
 }
 
+module "josh-horse" {
+  source            = "../../templates/netlify_domain"
+  domain            = "josh.horse"
+  registrar         = "iwantmyname"
+  netlify_subdomain = "mcmillan-canonical-redirect"
+}
+
+module "josh-party" {
+  source            = "../../templates/netlify_domain"
+  domain            = "josh.party"
+  registrar         = "iwantmyname"
+  netlify_subdomain = "mcmillan-canonical-redirect"
+}
+
 module "mcmillan-sexy" {
   source            = "../../templates/netlify_domain"
   domain            = "mcmillan.sexy"
