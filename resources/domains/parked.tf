@@ -33,6 +33,12 @@ module "honk-platform-com" {
   domain = "honk-platform.com"
 }
 
+module "hutz-attorney" {
+  source    = "../../templates/parked_domain"
+  domain    = "hutz.attorney"
+  registrar = "iwantmyname"
+}
+
 module "incident-engineering" {
   source = "../../templates/parked_domain"
   domain = "incident.engineering"
