@@ -43,6 +43,11 @@ module "incident-technology" {
   domain = "incident.technology"
 }
 
+module "josh-republican" {
+  source = "../../templates/parked_domain"
+  domain = "josh.republican"
+}
+
 module "placepu-gs" {
   source    = "../../templates/parked_domain"
   domain    = "placepu.gs"
