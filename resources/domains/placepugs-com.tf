@@ -1,3 +1,4 @@
+// expires July 24, 2020
 module "placepugs-com" {
   source = "../../templates/cdn_domain"
 

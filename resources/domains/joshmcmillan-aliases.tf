@@ -51,6 +51,7 @@ module "josh-engineering" {
   netlify_subdomain = "mcmillan-canonical-redirect"
 }
 
+// expires October 02, 2020
 module "josh-horse" {
   source            = "../../templates/netlify_domain"
   domain            = "josh.horse"
@@ -65,6 +66,7 @@ module "josh-party" {
   netlify_subdomain = "mcmillan-canonical-redirect"
 }
 
+// expires October 03, 2020
 module "mcmillan-sexy" {
   source            = "../../templates/netlify_domain"
   domain            = "mcmillan.sexy"
