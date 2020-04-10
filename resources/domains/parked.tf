@@ -102,6 +102,12 @@ module "shush-wtf" {
   domain = "shush.wtf"
 }
 
+// expires February 15, 2021
+module "spots-wtf" {
+  source = "../../templates/parked_domain"
+  domain = "spots.wtf"
+}
+
 // expires January 26, 2021
 module "stereo-company" {
   source = "../../templates/parked_domain"
@@ -124,6 +130,11 @@ module "stereo-engineering" {
 module "stereo-wtf" {
   source = "../../templates/parked_domain"
   domain = "stereo.wtf"
+}
+
+module "two-fyi" {
+  source = "../../templates/parked_domain"
+  domain = "two.fyi"
 }
 
 // expires September 27, 2020
