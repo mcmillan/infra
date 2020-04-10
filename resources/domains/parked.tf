@@ -47,6 +47,12 @@ module "placepu-gs" {
   registrar = "iwantmyname"
 }
 
+// expires July 24, 2020
+module "placepugs-com" {
+  source = "../../templates/parked_domain"
+  domain = "placepugs.com"
+}
+
 // expires August 9, 2020
 module "plush-dev" {
   source    = "../../templates/parked_domain"
