@@ -1,5 +1,5 @@
 resource "aws_route53_zone" "zone" {
-  name    = "${var.domain}"
+  name    = var.domain
   comment = "Managed by mcmillan/infra (registrar: ${var.registrar})"
   tags = {
     Registrar = var.registrar
@@ -7,8 +7,8 @@ resource "aws_route53_zone" "zone" {
 }
 
 resource "aws_route53_record" "apex" {
-  zone_id = "${aws_route53_zone.zone.zone_id}"
-  name    = "${var.domain}"
+  zone_id = aws_route53_zone.zone.zone_id
+  name    = var.domain
   type    = "A"
   ttl     = 300
 
@@ -16,17 +16,17 @@ resource "aws_route53_record" "apex" {
 }
 
 resource "aws_route53_record" "www" {
-  zone_id = "${aws_route53_zone.zone.zone_id}"
+  zone_id = aws_route53_zone.zone.zone_id
   name    = "www.${var.domain}"
   type    = "CNAME"
   ttl     = 300
 
-  records = ["${local.netlify_domain}"]
+  records = [local.netlify_domain]
 }
 
 resource "aws_route53_record" "mx" {
-  zone_id = "${aws_route53_zone.zone.zone_id}"
-  name    = "${var.domain}"
+  zone_id = aws_route53_zone.zone.zone_id
+  name    = var.domain
   type    = "MX"
   ttl     = 300
   count   = var.requires_email == true ? 1 : 0
