@@ -1,13 +1,3 @@
-module "burntwothings-com" {
-  source = "../../templates/parked_domain"
-  domain = "burntwothings.com"
-}
-
-module "chateau-technology" {
-  source = "../../templates/parked_domain"
-  domain = "chateau.technology"
-}
-
 module "feelingcagey-com" {
   source = "../../templates/parked_domain"
   domain = "feelingcagey.com"
@@ -37,16 +27,6 @@ module "hutz-attorney" {
   source    = "../../templates/parked_domain"
   domain    = "hutz.attorney"
   registrar = "iwantmyname"
-}
-
-module "incident-engineering" {
-  source = "../../templates/parked_domain"
-  domain = "incident.engineering"
-}
-
-module "incident-technology" {
-  source = "../../templates/parked_domain"
-  domain = "incident.technology"
 }
 
 module "josh-republican" {
@@ -120,11 +100,6 @@ module "stereo-engineering" {
 module "stereo-wtf" {
   source = "../../templates/parked_domain"
   domain = "stereo.wtf"
-}
-
-module "wilf-dog" {
-  source = "../../templates/parked_domain"
-  domain = "wilf.dog"
 }
 
 module "westwood-website" {
