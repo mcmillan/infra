@@ -54,12 +54,6 @@ module "plush-dev" {
   registrar = "google"
 }
 
-module "quornhub-eu" {
-  source    = "../../templates/parked_domain"
-  domain    = "quornhub.eu"
-  registrar = "iwantmyname"
-}
-
 // expires March 23, 2021
 module "rhythm-cool" {
   source = "../../templates/parked_domain"
